@@ -1,0 +1,484 @@
+@font-face {
+    font-family: "font_base";
+    src: url("../fonts/segoe_ui_light.ttf");
+}
+
+* {
+	font-family: "font_base";
+	margin: 0;
+	padding: 0;
+	-webkit-box: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #fefefe;	
+}
+
+section{
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.panelVideo{
+	text-align: center;
+}
+.menuBar{
+	display: none;
+}
+
+.widgetMenu{
+	width: 100%;
+}
+
+.widgetMenu nav {
+	background: #003f5e;
+	z-index: 1000;/*hace que este elemento este sobre los demas*/
+	width: 100%;
+	margin: 0px auto;/*20px arriba y abajo, centrado de lado derecho e izquierdo*/
+	-webkit-box-shadow: 0px 6px 18px -6px rgba(0,0,0,0.76);
+	-moz-box-shadow: 0px 6px 18px -6px rgba(0,0,0,0.76);
+	box-shadow: 0px 6px 18px -6px rgba(0,0,0,0.76);
+}
+
+.widgetMenu nav ul {
+	list-style: none; /* para quitar todos los listados*/
+}
+
+.redesSociales{
+	margin-top: 15px;
+	margin-bottom: 30px;
+	font-size: 20px !important;
+	color: #FFF !important;
+}
+/*
+  |------------------------- 1 ---------------------------| 
+  | no se usa float: left porque tiene menus desplegables |
+  |-------------------------------------------------------|
+*/
+
+.widgetMenu nav ul li {
+	text-align: center;
+	display: inline-block; /* -1- */
+	position: relative; /*es importante para los submenus*/
+	font-size: 13px;
+}
+
+.widgetMenu nav ul li:hover{
+	background: #002b41;
+}
+
+.widgetMenu nav ul li a{
+	font-size: 15px;
+	color: #FFFFFF;
+	display: block;
+	text-decoration: none;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.widgetMenu nav ul li a span {
+	margin: 10px 5px;
+}
+
+
+/*---------- Botones del Menu en el primer nivel ----------*/
+/*Primer Nivel del Menu*/
+
+.flLogo{
+	width: 22.5%;
+}
+
+.widgetMenu nav ul .flLogo a{
+	background-image: url(../img/logoVertical.png);
+	background-repeat: no-repeat;
+	background-size: auto 60px;
+	background-position: right;
+}
+
+.widgetMenu nav ul .flLogo:hover{
+	background-color: #003f5e;
+}
+
+.flIndex{
+	width: 11.5%;
+}
+
+.flProducts{
+	width: 11.5%;
+}
+
+.flServices{
+	width: 11.5%;
+}
+
+.flCompany{
+	width: 11.5%;
+}
+
+.flIndigo{
+	width: 11.5%;
+}
+
+.flSearch{
+	width: 11.5%;
+	margin-right: 5%;
+}
+
+.widgetMenu nav ul .flSearch a{
+	background-image: url(../img/icon-search4.png);
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-position: center;
+}
+
+/*
+  |------------------------------------ 2 ---------------------------------------|
+  |significa que cuando estemos sobre las clases li vamos a mostrar los children |
+  |------------------------------------------------------------------------------|
+*/
+
+.widgetMenu  nav ul li .secondLevelProducts{ /* -2- */
+	display: none;
+	background: #FFFFFF;
+	color: #282828;
+	position: fixed;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	-webkit-box-shadow: 0px 6px 18px -6px rgba(0,0,0,0.76);
+	-moz-box-shadow: 0px 6px 18px -6px rgba(0,0,0,0.76);
+	box-shadow: 0px 6px 18px -6px rgba(0,0,0,0.76);
+}
+
+.widgetMenu  nav ul li .secondLevelProducts li{
+	width: calc(20% - 60px);
+	margin: 20px;
+	display: block;
+}
+
+.widgetMenu  nav ul li .secondLevelSearch{
+	display: none;
+	background: #FFFFFF;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	z-index: 1000;
+	-webkit-box-shadow: 0px 6px 18px -6px rgba(0,0,0,0.76);
+	-moz-box-shadow: 0px 6px 18px -6px rgba(0,0,0,0.76);
+	box-shadow: 0px 6px 18px -6px rgba(0,0,0,0.76);
+}
+
+
+.slIndustries, .slSuites, .slLabs  {
+	width: 20%;
+}
+
+.slText{
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.widgetMenu  nav ul li .secondLevelProducts .slIndustries{
+	margin-top: 142px;
+	background-color: #0078D7;
+}
+
+.widgetMenu  nav ul li .secondLevelProducts .slIndustries:hover{
+	background-color: rgba(0,120,215,.8);
+}
+
+.borderColorIdentifyIndustries{
+	border-left: 2px solid #0078D7 !important;
+}
+
+.widgetMenu  nav ul li .secondLevelProducts .slSuites{
+	background-color: #68217A;
+}
+
+.widgetMenu  nav ul li .secondLevelProducts .slSuites:hover{
+	background-color: rgba(104,33,122,.8);
+}
+
+.borderColorIdentifySuites{
+	border-left: 2px solid #68217A !important;
+}
+
+.widgetMenu  nav ul li .secondLevelProducts .slLabs{
+	margin-bottom: 142px;
+	background-color: #D73B02;
+}
+
+.widgetMenu  nav ul li .secondLevelProducts .slLabs:hover{
+	background-color: rgba(215,59,2,.8);
+}
+
+.borderColorIdentifyLabs{
+	border-left: 2px solid #D73B02 !important;
+}
+
+.widgetMenu  nav ul li .secondLevelProducts .slPanelImage{
+	background: #fff;
+	width: 80%;
+	float: right;
+}
+
+.widgetMenu  nav ul li .secondLevelProducts .slPanelImage:hover{
+	border-color: #FFFFFF;
+	background: #FFFFFF;
+}
+
+.widgetMenu  nav ul li a .caret{
+	font-size: 8px;
+	margin-left: 5px;
+}
+
+/* Paneles
+ |--------------------------------------------------------------|
+ |Paneles que contienen imagen e informacion que se activan		|
+ |en el evento hover de cada item en el segundo nivel del menu  |
+ |--------------------------------------------------------------|
+ */
+.slpi{
+	display: block;
+    width: 100%;
+    position: absolute;
+}
+
+/* 
+ |----------------------------------------------------|
+ |Imagenes, titulos y contenidos dentro de los paneles|
+ |----------------------------------------------------|
+ */
+
+.imgInnerPanel{
+	background-size: auto 400px;
+	background-position: center top;
+	background-repeat: no-repeat;
+	width: 100%;
+	z-index: 1000;
+	height: 500px;
+	position: absolute;
+	left: 0;
+	border-left: 1px solid rgba(60,60,60,.2);
+}
+
+.imageProducts{
+	background-image: url(../img/img1.png);
+}
+.imageIndustries{
+	background-image: url(../img/img2.png);
+}
+.imageSuites{
+	background-image: url(../img/img3.png);
+}
+.imageLabs{
+	background-image: url(../img/img4.png);
+}
+
+.titleInnerPanel{
+	margin-top: 410px;
+	font-size: 30px;
+	margin-top: 410px;
+}
+
+.contentPanel{
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+/* Clase de intercambio usada en jQuery para la seleccion de un item o boton del menu*/
+.clickButton{
+	background:  rgba(0, 43, 65, 0.56);
+}
+
+.carousel-unad{
+	width: 600px;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 50px;
+	position: relative;
+	z-index: -9999;
+}
+
+.footer-unad{
+	width: 100%;
+	height: 85px;
+	margin-top: 20px;
+	background-color: #003f5e;
+}
+
+.panelPerfilAlign{
+	text-align: center;
+}
+
+.imgPerfil{
+	border-radius: 80px;
+	border: solid 1px #E2E2E2;
+	margin: 5px;
+}
+
+.img-footer{
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+.text-footer{
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	margin-top: 5px;
+	color: #FFF;
+	font-size: 10px;
+}
+
+.strongText{
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	color: #FFF;
+	font-size: 12px;
+}
+
+.text-panel{
+	margin-top: 50px;
+	color: #282828;
+	font-size: 16px;
+}
+
+.container-page{
+	margin: 20px 25%;
+}
+@media screen and (max-width: 800px){
+	body {
+		padding-top: 70px; 
+	}
+
+	.menuBar{
+		display: block;
+		height: 70px;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		background: #003f5e;
+		padding-left: 10px;
+		-webkit-box-shadow: 0px 6px 18px -6px rgba(0,0,0,0.76);
+		-moz-box-shadow: 0px 6px 18px -6px rgba(0,0,0,0.76);
+		box-shadow: 0px 6px 18px -6px rgba(0,0,0,0.76);
+	}
+
+	.menuBar .bt-menu{
+		display: block;
+		padding: 15px;
+		color: #FFFFFF;
+		overflow: hidden;
+		background-image: url(../img/logoVertical.png);
+		background-repeat: no-repeat;
+		background-size: auto 60px;
+		background-position: left;
+	}
+
+	.menuBar span{
+		float: right;
+		font-size: 40px;
+	}
+
+	.widgetMenu nav ul .flLogo a{
+		background-position: left;
+	}
+
+	.widgetMenu nav ul .flSearch a{
+	    background-position: left;
+   	}
+
+   	.widgetMenu nav ul li .secondLevelSearch{
+	    position: relative;
+	    width: calc(100% + 10px);
+	    margin-left: -10px;
+   	}
+
+   	/*Paneles del submenu*/
+   	.widgetMenu  nav ul li .secondLevelProducts .slIndustries{
+		margin: 0;
+		width: 100%;
+		/*width: calc(100% + 10px);
+	    margin-left: -10px;*/
+	}
+
+	.widgetMenu  nav ul li .secondLevelProducts .slSuites{
+		margin: 0;
+		width: 100%;
+		/*width: calc(100% + 10px);
+	    margin-left: -10px;*/
+	}
+
+	.widgetMenu  nav ul li .secondLevelProducts .slLabs{
+		margin: 0;
+		width: 100%;
+	    /*width: calc(100% + 10px);
+	    margin-left: -10px;*/
+	}
+
+	.widgetMenu nav ul .flLogo a{
+		display: none;
+	}
+
+/*
+	|------------------------------------- 3 ----------------------------------|
+	| Funcion para calcular una medida entre porcentaje y pixel u otra unidad  |
+	|--------------------------------------------------------------------------|
+*/
+
+	.widgetMenu nav {
+		width: 80%;
+		height: calc(100% - 80px); /* -3- */
+		position: fixed;
+		left: -100%;
+		margin:  0;
+		overflow: scroll;
+	}
+
+	.widgetMenu nav ul li{
+		padding-left: 10px;
+		display: block;
+		border-bottom: 1px solid rgba(255,255,255,.5);
+		width: 100%;
+		text-align: left;
+	}
+
+	.widgetMenu nav ul li a{
+		display: block;
+	}
+
+	.widgetMenu  nav ul li .secondLevelProducts .slPanelImage{
+		display: none;
+	}
+
+	.widgetMenu  nav ul li .secondLevelProducts{
+		width: 100%;
+		position: relative;
+	}
+
+	.flIndex {
+		margin-left: 0;
+	}
+
+	.widgetMenu  nav ul li .secondLevelProducts li a{
+		margin-left: 20px;
+	}
+
+   	.widgetMenu nav ul li .caret{
+   		float: right;
+   		padding-right: 10px;
+   	}
+
+   	.widgetMenu  nav ul li a .caret{
+		font-size: 15px;
+	    margin-top: 3px;
+	}
+}
