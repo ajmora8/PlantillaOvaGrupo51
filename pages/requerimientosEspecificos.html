@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>.:: UNAD ::.</title>
+	<link rel="stylesheet" type="text/css" href="../resources/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+
+	<link rel="stylesheet" href="../resources/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../resources/bootstrap/css/bootstrap-theme.min.css" >
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+	<div class="widgetMenu">
+		<div class="menuBar">
+			<a href="#" class="bt-menu"><span class="icon-menu"></span></a>
+		</div>
+		<nav id="navMenu">
+			<ul>
+				<li class="firstLevel flLogo"><a href="../"><span class="logoCompany"></span></a>
+				</li>
+				<li class="firstLevel flIndex"><a href="../"><span><i class="icon icon-home"></i></span>Inicio</a></li>
+				<li class="firstLevel flProducts"><a href="#"><span><i class="icon icon-book"></i></span>Lectura<span class="caret"></span></a>
+					<ul class="secondLevelProducts">
+						<li class="slPanelImage">
+							<div class="slpi slPanelImageProducts">
+								<span class="imgInnerPanel imageProducts"></span>
+								<p class="titleInnerPanel titleProducts">UNAD</p>
+								<p class="contentInnerPanel contentProducts">Universidad Nacional Abierta y a Distancia</p>
+							</div>
+							<div class="slpi slPanelImageIndustries">
+								<span class="imgInnerPanel imageIndustries"></span>
+								<p class="titleInnerPanel titleIndustries">Diseño de Sitios Web - Especificacion de Requisitos Software</p>
+								<p class="contentInnerPanel contentIndustries">Introducción</p>
+							</div>
+							<div class="slpi slPanelImageSuites">
+								<span class="imgInnerPanel imageSuites"></span>
+								<p class="titleInnerPanel titleSuites">Diseño de Sitios Web - Especificacion de Requisitos Software</p>
+								<p class="contentInnerPanel contentSuites">Descripción General</p>
+							</div>
+							<div class="slpi slPanelImageLabs">
+								<span class="imgInnerPanel imageLabs"></span>
+								<p class="titleInnerPanel titleLabs">Diseño de Sitios Web - Especificacion de Requisitos Software</p>
+								<p class="contentInnerPanel contentLabs">Requisitos Especificos</p>
+							</div>
+						</li>
+						<li class="slIndustries"><a href="introduccion.html"><label class="slText">Introducción</label></a></li>
+						<li class="slSuites"><a href="descripcionGeneral.html"><label class="slText">Descripción General</label></a></li>
+						<li class="slLabs"><a href="requerimientosEspecificos.html"><label class="slText">Requisitos Especificos</label></a></li>
+					</ul>
+				</li>
+				<li class="firstLevel flServices"><a href="multimedia.html"><span><i class="icon icon-video-camera"></i></span>Multimedia</a></li>
+				<li class="firstLevel flCompany"><a href="actividades.html"><span><i class="icon icon-clipboard"></i></span>Actividades</a></li>
+				<li class="firstLevel flIndigo"><a href="autores.html"><span><i class="icon icon-user-check"></i></span>Autores</a></li>
+				<li class="firstLevel flSearch"><a class="iconSearch_a" href="#"><span class="icon iconSearch"></span></a>
+					<ul class="secondLevelSearch">
+						<li class="slPanelSearch">
+							<div class="divSearch">
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="container-page">
+		<div class="page-header">
+		  <h1>Especificación de Requisitos de Software</h1>
+		</div>
+			<div class="panel panel-default">
+			  <div class="panel-body">
+			    Esta sección contiene los requisitos a un nivel de detalle suficiente como para permitir a los diseñadores diseñar un sistema que satisfaga estos requisitos, y que permita al equipo de pruebas planificar y realizar las pruebas que demuestren si el sistema satisface, o no, los requisitos. Todo requisito aquí especificado describirá comportamientos externos del sistema, perceptibles por parte de los usuarios, operadores y otros sistemas. Esta es la sección más larga e importante de la ERS. </br>
+</br>Deberán aplicarse los siguientes principios: El documento debería ser perfectamente legible por personas de muy distintas formaciones e intereses. Deberán referenciarse aquellos documentos relevantes que poseen alguna influencia sobre los requisitos. 
+Todo requisito deberá ser unívocamente identificable mediante algún código o sistema de numeración adecuado. Lo ideal, aunque en la práctica no siempre realizable, es que los requisitos posean las siguientes características:
+</br>• Corrección: La ERS es correcta si y sólo si todo requisito que figura aquí (y que será implementado en el sistema) refleja alguna necesidad real. La corrección de la ERS implica que el sistema implementado ser ‘a el sistema deseado. 
+</br>• No ambiguos: Cada requisito tiene una sola interpretación. Para eliminar la ambigüedad inherente a los requisitos expresados en lenguaje natural, se deberán utilizar gráficos o notaciones formales. En el caso de utilizar términos que, habitualmente, poseen más de una interpretación, se definirán con precisión en el glosario. 
+</br>• Completos: Todos los requisitos relevantes han sido incluidos en la ERS. Conviene incluir todas las posibles respuestas del sistema a los datos de entrada, tanto valido como no válido.
+</br>• Consistentes: Los requisitos no pueden ser contradictorios. Un conjunto de requisitos contradictorio no es implementable. 
+</br>• Clasificados: Normalmente, no todos los requisitos son igual de importantes. Los requisitos pueden clasificarse por importancia (esencial, condicional u opcional) o por estabilidad (cambios que se espera que afecten al requisito). Esto sirve, ante todo, para no emplear excesivos recursos en implementar requisitos no esenciales. 
+</br>• Verificables: La ERS es verificable si y sólo si todos sus requisitos son verificables. Un requisito es verificable (testeable) si existe un proceso finito y no costoso para demostrar que el sistema cumple con el requisito. Un requisito ambiguo no es, en general, verificable. Expresiones como a veces, bien, adecuado, etc. introducen ambigüedad en los requisitos. Requisitos como “en caso de accidente la nube tóxica no se extenderá más allá de 25Km” no es verificable por el alto costo que conlleva. 
+</br>• Modificables: La ERS es modificable si y sólo si se encuentra estructurada de forma que los cambios a los requisitos pueden realizarse de forma fácil, completa y consistente. La utilización de herramientas automáticas de gestión de requisitos (por ejemplo RequisitePro o Doors) facilita enormemente esta tarea. 
+</br>• Trazables: La ERS es trazable si se conoce el origen de cada requisito y se facilita la referencia de cada requisito a los componentes del diseño y de la implementación. La trazabilidad hacia atrás indica el origen (documento, persona, etc.) de cada requisito. La trazabilidad hacia delante de un requisito R indica que componentes del sistema son los que realizan el requisito R. 
+</br>3.1. Interfaces Externas </br>
+Se describirán los requisitos que afecten a la interfaz de usuario, interfaz con otros sistemas (hardware y software) e interfaces de comunicaciones. 
+</br>3.2. Funciones </br>
+Esta subsección (quizá la más larga del documento) deberá especificar todas aquellas acciones (funciones) que deber ‘a llevar a cabo el software. Normalmente (aunque no siempre), son aquellas acciones expresables como “el sistema deber ‘a. . . ”. Si se considera necesario, podrán utilizarse notaciones gráficas y tablas, pero siempre supeditadas al lenguaje natural, y no al revés. Es importante tener en cuenta que, en 1983, el Estándar de IEEE 830 establecía que las funciones deberían expresarse como una jerarquía funcional (en paralelo con los DFDs propuestos por el análisis estructurado). Pero el Estándar de IEEE 830, en sus ´últimas versiones, ya permite organizar esta subsección de múltiples formas, y sugiere, entre otras, las siguientes: Por tipos de usuario: Distintos usuarios poseen distintos requisitos. Para cada clase de usuario que exista en la organización, se especificarán los requisitos funcionales que le afecten o tengan mayor relación con sus tareas. Por objetos: Los objetos son entidades del mundo real que serán reflejadas en el sistema. Para cada objeto, se detallarán sus atributos y sus funciones. Los objetos pueden agruparse en clases. Esta organización de la ERS no quiere decir que el diseño del sistema siga el paradigma de Orientación a Objetos. Por objetivos: Un objetivo es un servicio que se desea que ofrezca el sistema y que requiere una determinada entrada para obtener su resultado. Para cada objetivo o sub objetivo que se persiga con el sistema, se detallarán las funciones que permitan llevarlo a cabo. Por estímulos: Se especificarán los posibles estímulos que recibe el sistema y las funciones relacionadas con dicho estimuló. Por jerarquía funcional: Si ninguna de las anteriores alternativas resulta de ayuda, la funcionalidad del sistema se especificará como una jerarquía de funciones que comparten entradas, salidas o datos internos. Se detallarán las funciones (entrada, proceso, salida) y las subfunciones del sistema. Esto no implica que el diseño del sistema deba realizarse según el paradigma de Diseño Estructurado. Para organizar esta subsección de la ERS se elegirá alguna de las anteriores alternativas, o incluso alguna otra que se considere más conveniente. Deberá, eso sí, justificarse el porqué de tal elección.
+</br>
+3.3. Requisitos de Rendimiento</br>
+ Se detallarán los requisitos relacionados con la carga que se espera tenga que soportar el sistema. Por ejemplo, el número de terminales, el número esperado de usuarios simultáneamente conectados, número de transacciones por segundo que deber ‘a soportar el sistema, etc. También, si es necesario, se especificarán lo requisitos de datos, es decir, aquellos requisitos que afecten a la información que se guardará en la base de datos. Por ejemplo, la frecuencia de uso, las capacidades de acceso y la cantidad de registros que se espera almacenar (decenas, cientos, miles o millones). 3.4. Restricciones de Diseño Todo aquello que restrinja las decisiones relativas al diseño de la aplicación: Restricciones de otros estándares, limitaciones del hardware, etc. 
+</br>3.5. Atributos del Sistema</br>
+Se detallarán los atributos de calidad (las “ilities”) del sistema: Fiabilidad, mantenibilidad, portabilidad, y, muy importante, la seguridad. Deberá especificarse que tipos de usuario están autorizados, o no, a realizar ciertas tareas, y cómo se implementarán los mecanismos de seguridad (por ejemplo, por medio de un login y una password). 3.6. Otros Requisitos Cualquier otro requisito que no encaje en otra sección. </br>
+4. Apéndices Pueden contener todo tipo de información relevante para la ERS pero que, propiamente, no forme parte de la ERS. Por ejemplo:</br>
+1. Formatos de entrada/salida de datos, por pantalla o en listados. </br>
+2. Resultados de análisis de costes. 3. Restricciones acerca del lenguaje de programación.
+			  </div>
+			</div>	 
+	</div>
+
+	<div class="footer-unad">
+		<div class="img-footer"><img src="../resources/img/logo_footer.png"></div>
+		<div class="text-footer">Elaborado por:</div>
+		<div class="strongText">Andres Javier Mora D. - Horlid Reina Guzman - Jorge Alberto Vargas</div>
+	</div>
+	<script type="text/javascript" src="../resources/js/jquery-1.9.1.min.js"></script>
+	<script src="../resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../resources/js/menu.js"></script>
+</body>
+</html>
